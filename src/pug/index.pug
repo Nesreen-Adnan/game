@@ -1,0 +1,34 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Memory Game
+        link(rel="stylesheet", href="css/main.css")
+    body.relative
+        .container.flex-column.p-10.relative
+            .start.abs.flex-column.cap
+                h1.special-font memory game
+                button.btn.cap.flex.transition(type="button") start
+                .get-name
+                    label.cap(for="name") what is your name?
+                    input.name.cap(id="name", placeholder="your name")
+                    button.cap(type="button") go 
+            .stop.flex-column.cap 
+                p.special-font game over! 
+                p.wrongs.p-10
+                button.btn.again.cap(type="button") play again
+            .win.flex-column.cap 
+                p.special-font well done!
+                p 
+                    | you finished in about 
+                    span.time 
+                    | s
+                .results
+                    p.title.cap.my-10.py-10 the results
+                    .parent.border
+            .timer.border.p-10
+                | timer: 00:
+                span.time(data-time=59)
+        script(src="js/main.js")

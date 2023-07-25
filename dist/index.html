@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body class="relative">
+    <div class="container flex-column p-10 relative">
+      <div class="start abs flex-column cap">
+        <h1 class="special-font">memory game</h1>
+        <button class="btn cap flex transition" type="button">start</button>
+        <div class="get-name">
+          <label class="cap" for="name">what is your name?</label>
+          <input class="name cap" id="name" placeholder="your name">
+          <button class="cap" type="button">go </button>
+        </div>
+      </div>
+      <div class="stop flex-column cap"> 
+        <p class="special-font">game over! </p>
+        <p class="wrongs p-10"></p>
+        <button class="btn again cap" type="button">play again</button>
+      </div>
+      <div class="win flex-column cap"> 
+        <p class="special-font">well done!</p>
+        <p>
+           you finished in about <span class="time"> </span>s</p>
+        <div class="results">
+          <p class="title cap my-10 py-10">the results</p>
+          <div class="parent border"></div>
+        </div>
+      </div>
+      <div class="timer border p-10">timer: 00:<span class="time" data-time="59"></span></div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
