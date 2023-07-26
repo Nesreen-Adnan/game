@@ -144,11 +144,13 @@
     .cards {
         --cardSize: 100px;
         max-width: calc(var(--cardSize) * 4 + 100px);
-        @media (min-width: 768px) {
-            --cardSize: 120px;
-            @media (min-height: 900px) {
-                --cardSize: 160px;
-            }
+        @media (min-width: 768px) and (min-height: 700px) {
+            --cardSize: 130px;
+            gap: 25px;
+        }
+        @media (min-width: 992px) and (min-height: 800px) {
+            --cardSize: 160px;
+            gap: 33px;
         }
         display: grid;
         grid-template-columns: repeat(4, minmax(var(--cardSize), 1fr));
