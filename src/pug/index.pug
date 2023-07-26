@@ -28,6 +28,15 @@ html(lang="en")
                 .results
                     p.title.cap.my-10.py-10 the results
                     .parent.border
+                button.btn.again.cap(type="button") play again
+            .header.p-10.cap.border
+                .greeting
+                    | hello: 
+                    span.name unknown
+                .wrong-tries 
+                    | wrong tries: 
+                    span.wrongs 0
+            .cards.px-10(data-opened=0)
             .timer.border.p-10
                 | timer: 00:
                 span.time(data-time=59)

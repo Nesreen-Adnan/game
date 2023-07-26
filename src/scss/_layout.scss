@@ -142,13 +142,21 @@
         @include flex(space-between);
     }
     .cards {
-        $cardSize: 100px;
+        --cardSize: 100px;
+        max-width: calc(var(--cardSize) * 4 + 100px);
+        @media (min-width: 768px) {
+            --cardSize: 120px;
+            @media (min-height: 900px) {
+                --cardSize: 160px;
+            }
+        }
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax($cardSize, 1fr));
+        grid-template-columns: repeat(4, minmax(var(--cardSize), 1fr));
         gap: 20px 3px;
         .card {
-            width: $cardSize;
-            height: $cardSize;
+            width: var(--cardSize);
+            height: var(--cardSize);
+            margin: 0 auto;
             transition: 1.3s;
             cursor: pointer;
             .frontface {
@@ -164,7 +172,7 @@
                 z-index: -1;
                 background-color: var(--brownColor);
                 img {
-                    width: calc($cardSize - 20px);
+                    width: calc(var(--cardSize) - 20px);
                     max-height: 100%;
                 }
             }

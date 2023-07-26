@@ -61,26 +61,26 @@ function rotation() {
 }
 function createCards() {
     cards.innerHTML = "";
-    let imagesFolder = "images",
-        imagesAlt = [
-            { alt: "html" },
-            { alt: "typescript" },
-            { alt: "css" },
-            { alt: "sass" },
-        ],
-        imagesSources = [
+    let imagesSources = [
             "https://cdn.worldvectorlogo.com/logos/html-1.svg",
             "https://cdn.worldvectorlogo.com/logos/typescript.svg",
-            // "https://cdn.worldvectorlogo.com/logos/css-3.svg",
-            // "https://cdn.worldvectorlogo.com/logos/vue-9.svg",
-            // "https://cdn.worldvectorlogo.com/logos/gulp.svg",
-            // "https://cdn.worldvectorlogo.com/logos/sass-1.svg"
-            // "https://cdn.worldvectorlogo.com/logos/react-2.svg",
-            // "https://cdn.worldvectorlogo.com/logos/java-14.svg",
+            "https://cdn.worldvectorlogo.com/logos/css-3.svg",
+            "https://cdn.worldvectorlogo.com/logos/vue-9.svg",
+            "https://cdn.worldvectorlogo.com/logos/gulp.svg",
+            "https://cdn.worldvectorlogo.com/logos/sass-1.svg",
+            "https://cdn.worldvectorlogo.com/logos/react-2.svg",
+            "https://cdn.worldvectorlogo.com/logos/java-14.svg",
             // "https://cdn.worldvectorlogo.com/logos/c.svg",
             // "https://cdn.worldvectorlogo.com/logos/c--4.svg",
-            // "https://cdn.worldvectorlogo.com/logos/bootstrap-5-1.svg"
+            // "https://cdn.worldvectorlogo.com/logos/bootstrap-5-1.svg",
         ],
+        // imagesFolder = "images",
+        // imagesAlt = [
+        //     { alt: "html" },
+        //     { alt: "typescript" },
+        //     { alt: "css" },
+        //     { alt: "sass" },
+        // ],
         // {src:`${imagesFolder}/html.svg`},
         // {src:`${imagesFolder}/typescript.svg`},
         // {src:`${imagesFolder}/css.svg`},
